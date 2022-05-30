@@ -10,7 +10,7 @@
   <title>TodoApp</title>
 </head>
 <body> 
-    <nav class="navbar navbar-dark bg-primary">
+    <nav class="navbar fixed-top navbar-dark bg-primary nav-bar">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">ToDo App</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -28,37 +28,36 @@
           </div>
         </div>
       </nav> 
-      <button class="btn btn-success add-button" onclick="goToTodoPage()"> 
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-lg" viewBox="0 0 16 16">
-        <path fill-rule="evenodd" d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2Z"/>
-      </svg> 
-    </button>
-  <!-- <header class="nav-bar">
-    <strong class="app-title">ToDo App</strong>
-    <img id="loader" style="display: none;" src="./assets/loader.gif" width="30px" alt="">
-    <button id="refresh-button" onclick="loadTodos()">
-      <img width="30px" src="./assets/refresh.svg" alt="">
-    </button>
-  </header> -->
-  <div id="todos-container" class="todos-container">
-    <!-- <div class="todo-card">
-      <span class="todo-name">#NAME</span>
-      <div class="tag-container"></div>
-      <span>#CREATIONDATE</span>
-      <div class="divider"></div>
-      <div class="buttons-container">
-        <button class="delete-button"><img width="20px" src="./assets/delete.svg" alt=""></button>
-        <button class="edit-button"><img width="20px" src="./assets/edit.svg" alt=""></button>
-        <button class="done-button"><img width="20px" src="./assets/check.svg" alt=""></button>
-      </div>
-    </div> -->
-  </div>
+    <!-- <header class="nav-bar">
+      <strong class="app-title">ToDo App</strong>
+      <img id="loader" style="display: none;" src="./assets/loader.gif" width="30px" alt="">
+      <button id="refresh-button" onclick="loadTodos()">
+        <img width="30px" src="./assets/refresh.svg" alt="">
+      </button>
+    </header> -->
+    <div id="todos-container" class="todos-container">
+      <!-- <div class="todo-card">
+        <span class="todo-name">#NAME</span>
+        <div class="tag-container"></div>
+        <span>#CREATIONDATE</span>
+        <div class="divider"></div>
+        <div class="buttons-container">
+          <button class="delete-button"><img width="20px" src="./assets/delete.svg" alt=""></button>
+          <button class="edit-button"><img width="20px" src="./assets/edit.svg" alt=""></button>
+          <button class="done-button"><img width="20px" src="./assets/check.svg" alt=""></button>
+        </div>
+      </div> -->
+    </div>
+    <button class="btn btn-success add-button" onclick="goToTodoPage()"> 
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-lg" viewBox="0 0 16 16">
+      <path fill-rule="evenodd" d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2Z"/>
+    </svg> 
+  </button>
   <!-- <button onclick="goToTodoPage()" class="add-button">
     <img src="./assets/add.svg" width="30px" alt="">
   </button> -->
 </body>
 <script src="./model.js"></script>
 <script src="./app.js"></script> 
-<!-- JavaScript Bundle with Popper -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </html>
