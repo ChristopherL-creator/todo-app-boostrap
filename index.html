@@ -9,14 +9,37 @@
   <link rel="stylesheet" href="./style.css">
   <title>TodoApp</title>
 </head>
-<body>
-  <header class="nav-bar">
+<body> 
+    <nav class="navbar navbar-dark bg-primary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">ToDo App</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-light" type="submit">Search</button> 
+            </form>
+            
+          </div>
+        </div>
+      </nav> 
+      <button class="btn btn-success add-button" onclick="goToTodoPage()"> 
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-lg" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2Z"/>
+      </svg> 
+    </button>
+  <!-- <header class="nav-bar">
     <strong class="app-title">ToDo App</strong>
     <img id="loader" style="display: none;" src="./assets/loader.gif" width="30px" alt="">
     <button id="refresh-button" onclick="loadTodos()">
       <img width="30px" src="./assets/refresh.svg" alt="">
     </button>
-  </header>
+  </header> -->
   <div id="todos-container" class="todos-container">
     <!-- <div class="todo-card">
       <span class="todo-name">#NAME</span>
@@ -30,9 +53,9 @@
       </div>
     </div> -->
   </div>
-  <button onclick="goToTodoPage()" class="add-button">
+  <!-- <button onclick="goToTodoPage()" class="add-button">
     <img src="./assets/add.svg" width="30px" alt="">
-  </button>
+  </button> -->
 </body>
 <script src="./model.js"></script>
 <script src="./app.js"></script> 

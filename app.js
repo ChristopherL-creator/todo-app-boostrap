@@ -59,17 +59,17 @@ function createTodoCard(todo){
 }
 
 function startLoading(){
-  const loader = document.getElementById('loader')
-  loader.style.display = 'inline-block'
-  const refresh = document.getElementById('refresh-button');
-  refresh.style.display = 'none';
+//   const loader = document.getElementById('loader')
+//   loader.style.display = 'inline-block'
+//   const refresh = document.getElementById('refresh-button');
+//   refresh.style.display = 'none';
 }
 
 function stopLoading() {
-  const loader = document.getElementById('loader')
-  loader.style.display = 'none'
-  const refresh = document.getElementById('refresh-button');
-  refresh.style.display = 'inline-block';
+//   const loader = document.getElementById('loader')
+//   loader.style.display = 'none'
+//   const refresh = document.getElementById('refresh-button');
+//   refresh.style.display = 'inline-block';
 }
 
 function filterTodos(t1, t2){
@@ -77,19 +77,19 @@ function filterTodos(t1, t2){
 }
 
 function removeTodoAndRefesh(todo){
-  stopLoading()
+//   stopLoading()
   todosArray = todosArray.filter(t1 => filterTodos(t1, todo))
   displayTodos(todosArray);
 }
 
 function deleteTodo(id){
-  startLoading()
+//   startLoading()
   const deleteUrl = BASE_URL + '/' + id;
   const fetchOptions = {method: 'delete'};
   fetch(deleteUrl, fetchOptions)
   .then(response => response.json())
   .then(result => removeTodoAndRefesh(result))
-  .catch(error => stopLoading())
+//   .catch(error => stopLoading())
 } 
 
 function requestConfirmToDelete(id) {
@@ -185,7 +185,7 @@ function displayTodos(todos){
 }
 
 function initTodos(todos){
-  stopLoading();
+//   stopLoading();
   todosArray = todos.map(obj => Todo.fromDbObj(obj)); 
 //  ordinare per priorità
   todosArray.sort(Todo.orderToDoByPriority);
@@ -193,7 +193,7 @@ function initTodos(todos){
 }
 
 function loadTodos(){
-  startLoading()
+//   startLoading()
   fetch(BASE_URL)
   .then(response => response.json())
   .then(result => initTodos(result))
