@@ -90,38 +90,38 @@
     margin: 5px;
   } */ 
 
-  html, body{
-    width: 100vw;
-    height: 100vh;
-    margin: 0px;
-    padding: 0px; 
-    background-color: rgb(217, 230, 255);
-  } 
+html, body{
+  width: 100vw;
+  height: 100vh;
+  margin: 0px;
+  padding: 0px; 
+  background-color: rgb(217, 230, 255);
+} 
 
-  .nav-bar{ 
-    position: sticky;
-  } 
+.nav-bar{ 
+  position: sticky;
+} 
 
-  .todos-container{ 
-    bottom: 56px;
-  } 
+.todos-container{ 
+  bottom: 56px;
+} 
 
-  .todo-card{ 
-    left: 5%;
-    border-radius: 20px; 
-    margin-bottom: 5px; 
-    margin-top: 2px;
-  }
+.todo-card{ 
+  left: 5%;
+  border-radius: 20px; 
+  margin-bottom: 5px; 
+  margin-top: 2px;
+} 
 
-  .chip{ 
-    margin: 2px;
-  } 
+.chip{ 
+  margin: 2px;
+} 
 
-  .add-button{
-        position: fixed; 
-        bottom: 5vh; 
-        right: 5vw; 
-        border-radius: 100%;
-  } 
+.add-button{
+      position: fixed; 
+      bottom: 5vh; 
+      right: 5vw; 
+      border-radius: 100%;
+} 
 
 
